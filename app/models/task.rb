@@ -1,17 +1,17 @@
 # == Schema Information
 #
-# Table name: lists
+# Table name: tasks
 #
 #  id         :integer          not null, primary key
 #  title      :string
-#  board_id   :integer
+#  done       :boolean
+#  list_id    :integer
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
 
-class List < ApplicationRecord
-  has_many :tasks
-  belongs_to :board
+class Task < ApplicationRecord
+  belongs_to :list
 
   validates :title, presence: true
 end

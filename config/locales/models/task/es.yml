@@ -1,0 +1,10 @@
+es:
+  activerecord:
+    errors:
+      models:
+        task:
+          attributes:
+            title:
+              blank: 'no puede estar en blanco'
+            list:
+              required: 'debe existir'

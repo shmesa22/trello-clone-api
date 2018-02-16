@@ -8,4 +8,8 @@ class ApplicationController < ActionController::API
   def get_current_board
     @current_board = Board.find(params[:board_id])
   end
+
+  def get_current_list
+    @current_list = List.find(params[:list_id])
+  end
 end
