@@ -1,0 +1,20 @@
+# == Schema Information
+#
+# Table name: lists
+#
+#  id         :integer          not null, primary key
+#  title      :string
+#  board_id   :integer
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: Board1
+  board: one
+
+two:
+  title: Board2
+  board: one
