@@ -1,0 +1,8 @@
+es:
+  activerecord:
+    errors:
+      models:
+        board:
+          attributes:
+            title:
+              blank: 'no puede estar en blanco'
