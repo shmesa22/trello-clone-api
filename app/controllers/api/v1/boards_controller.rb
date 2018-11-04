@@ -38,7 +38,7 @@ module Api
 
       private
         def board_params
-          params.require(:board).permit(:title, :description)
+          params.require(:board).permit(:title, :description, :isFavorited)
         end
     end
   end
