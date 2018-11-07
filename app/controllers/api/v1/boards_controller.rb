@@ -8,7 +8,7 @@ module Api
 
       def show
         board = Board.find(params[:id])
-        render json: board.to_json(include: [:lists])
+        render json: board.to_json(include: [lists: { include: [:tasks] }])
       end
 
       def create

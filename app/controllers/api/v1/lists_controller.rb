@@ -12,7 +12,7 @@ module Api
         list = List.new(list_params)
         list.board = @current_board
         if list.save
-          render json: list
+          render json: list.to_json(include: [:tasks])
         else
           render json: { errors: list.errors }, status: 422
         end
